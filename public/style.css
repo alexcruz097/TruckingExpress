@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ***************** NAVBAR COMPONENT STYLE ***************/
+/* navbar container */
+.nav-bar-content {
+    height: 7rem;
+    background-color: goldenrod;
+}
+
+/* nav links */
+#nav-links-container {
+    position: absolute;
+    top: 7rem;
+    transform: translateY(-100vh);
+    transition: transform .3s ease-in-out;
+    z-index: -1;
+
+    width: 90vw;
+
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#links li {
+    cursor: pointer;
+    font-size: 35px;
+    padding: 12px 90vw;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px solid black;
+    z-index: 1;
+    transition: transform .3s ease-in-out;
+    font-weight: 100;
+}
+
+#links li:hover {
+    transform: scale(1.2);
+    color: red;
+    background-color: #cecece;
+
+}
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 7rem;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/*  logo */
+#logo img {}
+
+/* hamburger style */
+.menu-icon {
+    display: grid;
+    place-items: center;
+    height: 55px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon>span {
+    width: 50px;
+    height: 3px;
+    background: red;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-icon:hover span:nth-child(1) {
+    width: 35px;
+}
+
+.menu-icon:hover span:nth-child(2) {
+    width: 40px;
+}
+
+.menu-icon .line-1 {
+    width: 42px;
+    justify-self: end;
+}
+
+.menu-icon .line-2 {
+    width: 35px;
+    justify-self: end;
+}
